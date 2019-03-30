@@ -1,1 +1,30 @@
 @import url(./sanitize.css);
+
+body{
+  text-align: center;
+  font-family: 'Noto Serif JP', serif;
+}
+/** top **/
+.margin{
+  height: 50px;
+}
+.top_image{
+  margin: 0 auto;
+}
+.top_image img{
+  width: 80%;
+  height: auto;
+}
+.artist_logos{
+}
+.tb{
+  display: none;
+}
+.top_text p{
+  font-size: 1.4em;
+}
+.top_text h1{
+  line-height: 0.9em;
+  font-weight: 100;
+  font-size: 6em;
+}

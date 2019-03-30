@@ -19,8 +19,10 @@
   <link rel="stylesheet" type="text/css" media="screen and (min-width:600px)" href="./css/layout-tb.css" />
   <link rel="stylesheet" type="text/css" media="screen and (min-width:600px)" href="./css/layout-ds.css" />
   <link rel="stylesheet" type="text/css" href="./css/menu.css" />
+  <link rel="stylesheet" type="text/css" href="./css/tab.css" />
   <link rel="shortcut icon" href="./favicon.ico" />
   <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&amp;subset=japanese" rel="stylesheet">
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
   <title>4way split</title>
 </head>
@@ -49,13 +51,14 @@
     <main>
       <section>
         <!--top-->
+        <div class="margin"></div>
         <div class="top_image">
-          <img src="" alt="jacket">
+          <img src="./img/4way_jacket.jpg" alt="jacket">
         </div>
         <div class="artist_logos">
           <!--sp tbで別画像-->
-          <img class="sp" src="" alt="">
-          <img class="tb" src="" alt="">
+          <img class="sp" src="" alt="明日の叙景×nhomme×冬蟲夏草×pale">
+          <img class="tb" src="" alt="明日の叙景×nhomme×冬蟲夏草×pale">
         </div>
         <div class="top_text">
           <p>4way split</p>
@@ -70,7 +73,7 @@
         </div>
         <article class="split_desc">
           <h2>見出し</h2>
-          <p></p>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </article>
         <article class=track_li>
           <h3>Track List</h3>
@@ -116,10 +119,37 @@
       <section id="artists">
         <!--artists-->
         <h2>Artists</h2>
+        <div class="tab_wrap">
+          <input id="tab1" type="radio" name="tab_btn" checked>
+          <input id="tab2" type="radio" name="tab_btn">
+          <input id="tab3" type="radio" name="tab_btn">
+          <input id="tab4" type="radio" name="tab_btn">
+    
+          <div class="tab_area">
+            <label for="tab1" class="tab1_label">明日の叙景</label>
+            <label for="tab2" class="tab2_label">nhomme</label>
+            <label for="tab3" class="tab3_label">冬蟲夏草</label>
+            <label for="tab4" class="tab4_label">pale</label>
+          </div>
+          <div class="panel_area">
+            <div id="panel1" class="tab_panel">
+              <p>panel1</p>
+            </div>
+            <div id="panel2" class="tab_panel">
+              <p>panel2</p>
+            </div>
+            <div id="panel3" class="tab_panel">
+              <p>panel3</p>
+            </div>
+            <div id="panel4" class="tab_panel">
+              <p>panel4</p>
+            </div>
+          </div>
       </section>
     </main>
     <footer>
       <!--footer-->
+      <p>&copy;4way split</p>
     </footer>
   </div>
   <script src="./js/menu.js"></script>
