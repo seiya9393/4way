@@ -12,8 +12,8 @@
 }
 
 .tab_wrap{
-  width: 50%;
-  margin: 80px auto;
+  width: 98%;
+  margin: 1em auto;
 }
 input[type="radio"]{
   display: none;
@@ -40,8 +40,11 @@ input[type="radio"]{
 }
 .tab_panel{
   width: 100%;
-  padding: 80px 0;
   display: none;
+}
+.tab_panel img {
+  width: 100%;
+  height: auto;
 }
 .tab_panel p{
   font-size:14px;

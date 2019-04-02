@@ -4,6 +4,12 @@ body{
   text-align: center;
   font-family: 'Noto Serif JP', serif;
 }
+
+section {
+  width: 97%;
+  margin: 0 auto;
+}
+
 /** top **/
 .margin{
   height: 50px;
@@ -20,6 +26,9 @@ body{
 .tb{
   display: none;
 }
+.top_text {
+  margin-bottom: 1.9em;
+}
 .top_text p{
   font-size: 1.4em;
 }
@@ -27,4 +36,100 @@ body{
   line-height: 0.9em;
   font-weight: 100;
   font-size: 6em;
+}
+.dl_links {
+  margin: 0 auto 3em;
+}
+.dl_links li {
+  display: inline-block;
+  width: 40px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.split_desc h2 {
+  font-size: 3em;
+}
+.split_desc {
+  margin-bottom: 1em;
+}
+
+.track_li {
+  display: block;
+  margin: 1em 0.5em 0;
+  padding: 0.3em 3em;
+  border: solid 1px black;
+}
+.track_li ol{
+  text-align: left;
+  list-style: decimal;
+}
+
+.spacing  {
+  margin: 2em 0 0 0.5em;
+  font-size: 2em;
+  font-weight: normal;
+  letter-spacing: 6vw;
+  text-shadow: 1px 1px 1px gray;
+}
+/** Contents **/
+.arts_cont {
+  overflow: hidden;
+  margin: 1em auto 0;
+}
+.arts_cont dl{
+  float: left;
+  width: 48%;
+  margin: 0 1% 2%;
+}
+.arts_cont dt, .four_way dt {
+  vertical-align: middle;
+  height: 3em;
+  line-height: 3em;
+  font-size: 1.4em;
+}
+.arts_cont dd, .four_way dd {
+  min-height: 5em;
+}
+.pale dt {
+ background: purple;
+}
+.pale dd {
+  border: solid 1px purple;
+}
+.nhom dt {
+ background: purple;
+}
+.nhom dd {
+  border: solid 1px purple;
+}
+.tcks dt {
+ background: purple;
+}
+.tcks dd {
+  border: solid 1px purple;
+}
+.asn dt {
+ background: purple;
+}
+.asn dd {
+  border: solid 1px purple;
+}
+.four_way {
+  margin: 0 auto;
+  width: 98%;
+}
+.four_way dt {
+  background: silver;
+}
+.four_way dd {
+  border: solid 1px silver;
+}
+
+/** Artists **/
+.panel_area li{
+  display: inline-block;
+  width: 35px;
+  height: auto;
+  margin: 5px 10px;
 }
