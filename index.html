@@ -19,7 +19,6 @@
   <link rel="stylesheet" type="text/css" media="screen and (min-width:600px)" href="./css/layout-tb.css" />
   <link rel="stylesheet" type="text/css" media="screen and (min-width:600px)" href="./css/layout-ds.css" />
   <link rel="stylesheet" type="text/css" href="./css/menu.css" />
-  <link rel="stylesheet" type="text/css" href="./css/tab.css" />
   <link rel="shortcut icon" href="./favicon.ico" />
   <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png" />
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&amp;subset=japanese" rel="stylesheet">
@@ -41,6 +40,7 @@
         </div>
         <nav>
           <ul>
+            <li><a href="#top">Top</a></li>
             <li><a href="#contents">Contents</a></li>
             <li><a href="#live">Live</a></li>
             <li><a href="#artists">Artists</a></li>
@@ -51,154 +51,158 @@
     <main>
       <section>
         <!--top-->
-        <div class="margin"></div>
+        <div class="margin" id="top"></div>
         <div class="top_image">
           <img src="./img/4way_jacket.jpg" alt="jacket">
+        </div>
+        <div class="top_text">
+          <h1>two</h1>
         </div>
         <div class="artist_logos">
           <!--sp tbで別画像-->
           <img class="sp" src="./img/art_logos_sp.png" alt="pale×nhomme×冬蟲夏草×明日の叙景">
           <img class="tb" src="./img/art_logos_ds.png" alt="pale×nhomme×冬蟲夏草×明日の叙景">
         </div>
-        <div class="top_text">
-          <p>4way split</p>
-          <h1>title</h1>
-        </div>
-        <div class="dl_links">
-          <ul>
-            <li><a href="#"><img src="./img/bandcamp-button-bc-circle-black.svg" alt="bandcamp"></a></li>
-            <li><a href="#"><img src="./img/Apple_Music_Icon_blk.svg" alt="Apple Music"></a></li>
-            <li><a href="#"><img src="./img/Spotify_Icon_RGB_Black.svg" alt="Spotify"></a></li>
-          </ul>
-          <p class="cmsn">cooming soon</p>
-        </div>
         <article class="split_desc">
-          <h2>見出し</h2>
           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </article>
-        <article class=track_li>
-          <h3>Track List</h3>
-          <ol>
-            <li>Darhme (pale)</li>
-            <li>林檎の歌 (nhomme)</li>
-            <li>玩具物 (冬蟲夏草)</li>
-            <li>冷たい傍ら (明日の叙景)</li>
-          </ol>
-        </article>
+        <div class="disc_info">
+          <div class="dl_links">
+            <ul>
+              <li><a href="#" target="_blank">Bandcamp</a></li>
+              <li><a href="#" target="_blank">Apple Music</a></li>
+              <li><a href="#" target="_blank">Spotify</a></li>
+            </ul>
+          </div>
+          <div class=track_li>
+            <ol>
+              <li>Dakhme<br><span>pale</span></li>
+              <li>淋檎の謳<br><span>nhomme</span></li>
+              <li>玩弄物<br><span>冬蟲夏草</span></li>
+              <li>冷たい傍ら<br><span>明日の叙景</span></li>
+            </ol>
+          </div>
+        </div>
       </section>
       <section id="contents">
         <!--contents-->
         <h2 class="spacing">Contents</h2>
-        <div class="arts_cont">
-          <dl class="pale">
-            <dt>pale</dt>
-            <dd>aaaaaaaaa</dd>
-          </dl>
-          <dl class="nhom">
-            <dt>nhomme</dt>
-            <dd></dd>
-          </dl>
-          <dl class="tcks">
-            <dt>冬蟲夏草</dt>
-            <dd></dd>
-          </dl>
-          <dl class="asn">
-            <dt>明日の叙景</dt>
-            <dd></dd>
-          </dl>
+        <ul class="arts_cont">
+          <li class="asn, content">
+            <a href="#" target="_blank">
+              <p class="cont_title">「冷たい傍ら」解説動画</p>
+              <p class="cont_date">dd/mm 公開</p>
+            </a>
+          </li>
+          <li class="pale, content">
+              <a href="#" target="_blank">
+                <p class="cont_title">「冷たい傍ら」解説動画</p>
+                <p class="cont_date">dd/mm 公開</p>
+              </a>
+          </li>
+          <li class="nhom, content">
+              <a href="#" target="_blank">
+                <p class="cont_title">「冷たい傍ら」解説動画</p>
+                <p class="cont_date">dd/mm 公開</p>
+              </a>
+          </li>
+          <li class="tcks, content">
+              <a href="#" target="_blank">
+                <p class="cont_title">「冷たい傍ら」解説動画</p>
+                <p class="cont_date">dd/mm 公開</p>
+              </a>
+          </li>
+        </ul>
+        <div class="next_conts">
+          <p class="next">NEXT</p>
+          <img src="./img/pale_logo.png" alt="pale">
+          <p class="nextconts_title">Vo Jirocoreの俺的ポストブラック10選</p>
+          <p class="nextconts_date">mm/dd(week) 公開予定</p>
         </div>
-        <dl class="four_way">
-          <dt>4way</dt>
-          <dd></dd>
-        </dl>
       </section>
       <section id="live">
         <!--live-->
         <h2 class="spacing">Live</h2>
-        <p>cooming soon</p>
+        <p class="cmsn">cooming soon</p>
+        <div class="live">
+          <img src="" alt="flyer">
+          <h3>4way Split レコ発</h3>
+          <p>yyyy/mm/dd(week)</p>
+          <p>@area</p>
+          <p>Open 00:00 / Start 00:00</p>
+          <p>Adv &yen;0000 / Door &yen;0000</p>
+          <p>Acts: pale , nhomme , 冬蟲夏草 , 明日の叙景</p>
+        </div>
       </section>
       <section id="artists">
         <!--artists-->
         <h2 class="spacing">Artists</h2>
-        <div class="tab_wrap">
-          <input id="tab1" type="radio" name="tab_btn" checked>
-          <input id="tab2" type="radio" name="tab_btn">
-          <input id="tab3" type="radio" name="tab_btn">
-          <input id="tab4" type="radio" name="tab_btn">
-    
-          <div class="tab_area">
-            <label for="tab1" class="tab1_label">pale</label>
-            <label for="tab2" class="tab2_label">nhomme</label>
-            <label for="tab3" class="tab3_label">冬蟲夏草</label>
-            <label for="tab4" class="tab4_label">明日の叙景</label>
-          </div>
-          <div class="panel_area">
-            <div id="panel1" class="tab_panel">
-              <p></p>
-              <img src="" alt="">
-              <ul>
-                <li><a href=""><img src="./img/Twitter_Social_Icon_Rounded_Square_White.svg" alt="twitter"></a></li>
-                <li><a href=""><img src="./img/flogo-RGB-HEX-Blk-1024.svg" alt="facebook"></a></li>
-              </ul>
-              <ul>
-                <li><a href=""><img src="./img/bandcamp-button-bc-circle-black.svg" alt="bandcamp"></a></li>
-                <li><a href=""><img src="./img/Apple_Music_Icon_blk.svg" alt="Apple Music"></a></li>
-                <li><a href=""><img src="./img/Spotify_Icon_RGB_Black.svg" alt="Sporify"></a></li>
-              </ul>
-              <p class="art_desc"></p>
+        <ul class="artists">
+          <li class="artist">
+            <div class="art_logo">
+              <img src="./img/pale_logo.png" alt="pale">
             </div>
-            <div id="panel2" class="tab_panel">
-              <p></p>
-              <img src="" alt="">
-              <ul>
-                <li><a href=""><img src="./img/Twitter_Social_Icon_Rounded_Square_White.svg" alt="twitter"></a></li>
-                <li><a href=""><img src="./img/flogo-RGB-HEX-Blk-1024.svg" alt="facebook"></a></li>
-              </ul>
-              <ul>
-                <li><a href=""><img src="./img/bandcamp-button-bc-circle-black.svg" alt="bandcamp"></a></li>
-                <li><a href=""><img src="./img/Apple_Music_Icon_blk.svg" alt="Apple Music"></a></li>
-                <li><a href=""><img src="./img/Spotify_Icon_RGB_Black.svg" alt="Sporify"></a></li>
-              </ul>
-              <p class="art_desc"></p>
+            <ul>
+              <li class="art_link">
+                <a href="#" target="_blank">aaaa</a>
+              </li>
+              <li class="art_link">
+                <a href="#" target="_blank">aaaa</a>
+              </li>
+            </ul>
+          </li>
+          <li class="artist">
+            <div class="art_logo">
+              <img src="./img/nhomme_logo.png" alt="nhomme">
             </div>
-            <div id="panel3" class="tab_panel">
-              <p></p>
-              <img src="" alt="">
-              <ul>
-                <li><a href=""><img src="./img/Twitter_Social_Icon_Rounded_Square_White.svg" alt="twitter"></a></li>
-                <li><a href=""><img src="./img/flogo-RGB-HEX-Blk-1024.svg" alt="facebook"></a></li>
-              </ul>
-              <ul>
-                <li><a href=""><img src="./img/bandcamp-button-bc-circle-black.svg" alt="bandcamp"></a></li>
-                <li><a href=""><img src="./img/Apple_Music_Icon_blk.svg" alt="Apple Music"></a></li>
-                <li><a href=""><img src="./img/Spotify_Icon_RGB_Black.svg" alt="Sporify"></a></li>
-              </ul>
-              <p class="art_desc"></p>
+            <ul>
+              <li class="art_link">
+                <a href="#" target="_blank">aaaa</a>
+              </li>
+              <li class="art_link">
+                <a href="#" target="_blank">aaaa</a>
+              </li>
+            </ul>
+          </li>
+          <li class="artist">
+            <div class="art_logo">
+              <img src="" alt="冬蟲夏草">
             </div>
-            <div id="panel4" class="tab_panel">
-              <img src="./img/asn_photo.jpg" alt="明日の叙景">
-              <p>Vo.布 Gt.等力 Ba.関 Dr.齊藤</p>
-              <a href="http://asunojokei.info/">website</a>
-              <ul>
-                <li><a href=""><img src="./img/Twitter_Social_Icon_Rounded_Square_White.svg" alt="twitter"></a></li>
-                <li><a href=""><img src="./img/flogo-RGB-HEX-Blk-1024.svg" alt="facebook"></a></li>
-              </ul>
-              <ul>
-                <li><a href="https://asunojokei.bandcamp.com/"><img src="./img/bandcamp-button-bc-circle-black.svg" alt="bandcamp"></a></li>
-                <li><a href=""><img src="./img/Apple_Music_Icon_blk.svg" alt="Apple Music"></a></li>
-                <li><a href=""><img src="./img/Spotify_Icon_RGB_Black.svg" alt="Sporify"></a></li>
-              </ul>
-              <p class="art_desc">2014年結成。ポストブラックメタルを基盤にハードコアやマスロック等の要素を取り入れ、美醜・明暗のコントラストを創り出すスタイルが特徴。</p>
+            <ul>
+              <li class="art_link">
+                <a href="#" target="_blank">aaaa</a>
+              </li>
+              <li class="art_link">
+                <a href="#" target="_blank">aaaa</a>
+              </li>
+            </ul>
+          </li>
+          <li class="artist">
+            <div class="art_logo">
+              <img src="./img/asunojokei_logo.png" alt="明日の叙景">
             </div>
-          </div>
+            <ul>
+              <li class="art_link">
+                <a href="http://asunojokei.info/" target="_blank">Website</a>
+              </li>
+              <li class="art_link">
+                <a href="https://twitter.com/asunojokei" target="_blank">Twitter</a>
+              </li>
+              <li class="art_link">
+                <a href="https://www.facebook.com/asunojokei/" target="_blank">Facebook</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </section>
     </main>
     <footer>
       <!--footer-->
-      <p>&copy;4way split</p>
+      <p>&copy;4way Split 「two」</p>
     </footer>
   </div>
   <script src="./js/menu.js"></script>
+  <!--<script src="./js/script.js"></script>-->
 </body>
 
 </html>

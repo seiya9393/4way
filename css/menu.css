@@ -48,8 +48,12 @@ header nav ul li a{
   width: 40px;
   height: 40px;
   position: fixed;
-  margin: 12px;
+  top: 14px;
+  right: 14px;
   z-index: 100;
+}
+#nav_toggle + * {
+  clear: both;
 }
 #nav_toggle div {
   position: relative;

@@ -13,6 +13,14 @@ section {
 a, label {
   -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
+body a {
+  color: gray;
+  text-decoration: underline; 
+}
+
+main {
+  margin: 0 0.7em;
+}
 
 /** top **/
 .margin{
@@ -26,8 +34,8 @@ a, label {
   height: auto;
 }
 .artist_logos{
-  margin:0 10% 0 20%;
-  width: 70%;
+  margin:0 3% 0 7%;
+  width: 90%;
 }
 .artist_logos img{
   width: 100%;
@@ -37,127 +45,204 @@ a, label {
   display: none;
 }
 .top_text {
-  margin-bottom: 1.9em;
-}
-.top_text p{
-  font-size: 1.4em;
+  margin: 1.4em 0 1.9em;
 }
 .top_text h1{
   line-height: 0.9em;
   font-weight: 100;
-  font-size: 6em;
+  font-size: 5em;
+}
+
+.disc_info {
+  overflow: hidden;
+  max-width: 345px;
+  margin: 0 auto;
 }
 .dl_links {
-  width: 189px;
+  display: flex;
+  flex-direction: column;
+  float: left;
   margin: 0 auto 3em;
-  position: relative;
+  width: 41%;
+  max-width: 200px;
 }
 .dl_links li {
   display: inline-block;
-  width: 40px;
-  height: auto;
-  margin: 0 10px;
-  opacity: 0.2;
+  position: relative;
+  margin: 0 0 1em 2px;
+  font-size: 1.2em;
+  width: 100%;
+  min-width: 117px;
+  height: 3em;
+  border: 1px solid black;
+  z-index: -1;
 }
-.cmsn {
-  font-size: 1.4em;
-  position: absolute;
-  bottom: 8px;
-  left: 18px;
+.dl_links a {
+  display: block;
+  padding-top: 0.6em;
+  width: 100%;
+  height: 100%;
 }
 
-.split_desc h2 {
-  font-size: 3em;
-}
 .split_desc {
-  margin-bottom: 1em;
+  margin-bottom: 4em;
+  text-align: left;
 }
 
 .track_li {
+  float: left;
   display: block;
-  margin: 1em 0.5em 0;
-  padding: 0.3em 3em;
-  border: solid 1px black;
+  padding: 0.3em 0 0 3em;
+  width: 55%;
+  min-width: 170px;
 }
 .track_li ol{
   text-align: left;
   list-style: decimal;
 }
+.track_li li {
+  font-size: 1.5em;
+  line-height: 0.8em;
+  margin-bottom: 15px;
+}
+.track_li span {
+  font-size: 0.6em;
+}
 
 .spacing  {
-  margin: 2em 0 0 0.5em;
+  margin: 2em 0 1em ;
   font-size: 2em;
   font-weight: normal;
-  letter-spacing: 6vw;
-  text-shadow: 1px 1px 1px gray;
 }
 /** Contents **/
 .arts_cont {
-  overflow: hidden;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   margin: 1em auto 0;
 }
-.arts_cont dl{
-  float: left;
-  width: 48%;
-  margin: 0 1% 2%;
+.content {
+  display: block;
+  position: relative;
+  width: 45%;
+  margin-bottom: 1em;
+  box-shadow: 0 0 5px rgb(110, 110, 110);
+  z-index: -1;
 }
-.arts_cont dt, .four_way dt {
-  vertical-align: middle;
-  height: 3em;
-  line-height: 3em;
-  font-size: 1.4em;
+.content:before{
+  display: block;
+  content: '';
+  padding-top: 100%;
 }
-.arts_cont dd, .four_way dd {
-  min-height: 5em;
+.content a {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
-.pale dt {
- background: #dcbfe6;
+.cont_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  width: 98%;;
+  height: auto;
+  text-decoration: underline;
 }
-.pale dd {
-  border: solid 1px #dcbfe6;
+.cont_date {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 75px;
+  font-size: 10px;
+  text-decoration: none;
+  background: rgb(235, 235, 235);
 }
-.nhom dt {
- background: #c9bfe6;
+
+.next {
+  text-align: left;
+  margin-left: 2%;
 }
-.nhom dd {
-  border: solid 1px #c9bfe6;
+.next_conts img{
+  display: block;
+  width: 40%;
+  height: auto;
+  margin: 0 auto 0.5em;
 }
-.tcks dt {
- background: #b8c0de;
+.nextconts_date {
+  font-size: 1.2em;
 }
-.tcks dd {
-  border: solid 1px #b8c0de;
+
+/** Live **/
+.cmsn p {
+  text-align: center;
 }
-.asn dt {
- background: #bdd8e6;
+.live img {
+  width: 100%;
+  height: auto;
 }
-.asn dd {
-  border: solid 1px #bdd8e6;
+.live p, .live h3{
+  text-align: left;
 }
-.four_way {
-  margin: 0 auto;
-  width: 98%;
+.live h3 {
+  font-size: 1.7em;
+  font-weight: 100;
 }
-.four_way dt {
-  background: silver;
-}
-.four_way dd {
-  border: solid 1px silver;
+.live p {
+  font-size: 16px;
 }
 
 /** Artists **/
-.panel_area li{
-  display: inline-block;
-  width: 30px;
-  height: auto;
-  margin: 5px 10px;
+#artists {
+  overflow: hidden;
+  margin: 0 0 7em;;
 }
-.art_desc {
-  margin-top: 1em;
+#artists ul{
+  list-style-type: none;
+}
+.artist {
+  float: left;
+  width: 50%;
+  height: 190px;
+}
+.art_logo {
+  position: relative;
+  height: 100px;
+  z-index: -1;
+}
+.artist img {
+  display: block;
+  position: absolute;
+  width: 80%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.artist ul {
+  display: list-item;
+}
+.art_link {
+  margin-bottom: 0.2em;
+  font-size: 1.1em;
 }
 
 /** footer **/
 footer {
-  background: silver;
+  clear: both;
+  background: rgba(0, 0, 0, 0.1);
   padding: 0.5em 0;
 }
