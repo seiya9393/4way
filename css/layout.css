@@ -9,10 +9,11 @@ section {
   width: 97%;
   margin: 0 auto;
 }
-
+/**
 a, label {
   -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
+**/
 body a {
   color: gray;
   text-decoration: underline; 
@@ -75,7 +76,6 @@ main {
   min-width: 117px;
   height: 3em;
   border: 1px solid black;
-  z-index: -1;
 }
 .dl_links a {
   display: block;
@@ -132,7 +132,6 @@ main {
   width: 45%;
   margin-bottom: 1em;
   box-shadow: 0 0 5px rgb(110, 110, 110);
-  z-index: -1;
 }
 .content:before{
   display: block;
