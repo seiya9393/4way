@@ -1,1 +1,49 @@
 @import url(./sanitize.css);
+section {
+  max-width: 1000px;
+}
+
+.margin {
+  height: 5vh;
+}
+.top_image {
+  height: 70vh;
+  margin: 0;
+}
+.top_image img {
+  height: 100%;
+  width: auto;
+}
+.top_text {
+  height: 25vh;
+  margin: auto 0;
+}
+.top_text h1 {
+  margin: auto;
+  font-size: 20vh;
+}
+
+.split_desc {
+  margin-bottom: 7em;
+}
+
+
+/** contents **/
+.content {
+  width: 23%;
+  margin: 1%;
+}
+.next_conts img {
+  max-width: 280px;
+}
+
+/** artists **/
+.artist {
+  height: 250px;
+}
+.art_logo {
+  height: 150px;
+}
+.art_logo img {
+  width: 170px;
+}

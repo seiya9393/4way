@@ -1,6 +1,7 @@
 @import url(./sanitize.css);
 
 body{
+  display: none;
   text-align: center;
   font-family: 'Noto Serif JP', serif;
 }
@@ -9,11 +10,7 @@ section {
   width: 97%;
   margin: 0 auto;
 }
-/**
-a, label {
-  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
-}
-**/
+
 body a {
   color: gray;
   text-decoration: underline; 
@@ -35,8 +32,8 @@ main {
   height: auto;
 }
 .artist_logos{
-  margin:0 3% 0 7%;
-  width: 90%;
+  margin:0 3% 5px 4%;
+  width: 93%;
 }
 .artist_logos img{
   width: 100%;
@@ -56,7 +53,7 @@ main {
 
 .disc_info {
   overflow: hidden;
-  max-width: 345px;
+  max-width: 330px;
   margin: 0 auto;
 }
 .dl_links {
@@ -65,7 +62,7 @@ main {
   float: left;
   margin: 0 auto 3em;
   width: 41%;
-  max-width: 200px;
+  max-width: 250px;
 }
 .dl_links li {
   display: inline-block;
@@ -90,7 +87,7 @@ main {
 }
 
 .track_li {
-  float: left;
+  float: right;
   display: block;
   padding: 0.3em 0 0 3em;
   width: 55%;
@@ -110,9 +107,15 @@ main {
 }
 
 .spacing  {
-  margin: 2em 0 1em ;
+  margin-bottom: 0.6em;
   font-size: 2em;
   font-weight: normal;
+}
+#contents {
+  margin-top: 8em;
+}
+#live {
+  margin-top: 15em;
 }
 /** Contents **/
 .arts_cont {
@@ -123,14 +126,13 @@ main {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
   margin: 1em auto 0;
 }
 .content {
   display: block;
   position: relative;
   width: 45%;
-  margin-bottom: 1em;
+  margin: 2.5%;
   box-shadow: 0 0 5px rgb(110, 110, 110);
 }
 .content:before{
@@ -168,7 +170,22 @@ main {
   text-decoration: none;
   background: rgb(235, 235, 235);
 }
+.cont_art {
+  display: block;
+  position: absolute;
+  width: 37%;
+  height: auto;
+  right: 4px;
+  bottom: 5px;
+}
+.pale img {
+  width: 30%;
+  height: auto;
+}
 
+.next_conts{
+  margin-top: 1.5em;
+}
 .next {
   text-align: left;
   margin-left: 2%;
@@ -195,7 +212,7 @@ main {
   text-align: left;
 }
 .live h3 {
-  font-size: 1.7em;
+  font-size: 1.9em;
   font-weight: 100;
 }
 .live p {
@@ -205,7 +222,7 @@ main {
 /** Artists **/
 #artists {
   overflow: hidden;
-  margin: 0 0 7em;;
+  margin: 15em auto 7em;
 }
 #artists ul{
   list-style-type: none;
@@ -223,7 +240,7 @@ main {
 .artist img {
   display: block;
   position: absolute;
-  width: 80%;
+  width: 120px;
   height: auto;
   top: 50%;
   left: 50%;
@@ -238,6 +255,17 @@ main {
   margin-bottom: 0.2em;
   font-size: 1.1em;
 }
+a {
+  transition: background-color .5s , color .5s;
+}
+a:hover  {
+  background-color: rgba(30, 78, 62, 0.219);
+  color: black;
+}
+.art_link a {
+  background-color: white;
+}
+
 
 /** footer **/
 footer {

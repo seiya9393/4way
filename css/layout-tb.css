@@ -1,1 +1,75 @@
 @import url(./sanitize.css);
+
+.top_text h1 {
+  font-size: 7em;
+}
+
+.sp {
+  display: none;
+}
+.tb {
+  display: inline;
+}
+.artist_logos {
+  width: 100%;
+  margin: 0 0 10px;
+}
+
+.split_desc {
+  font-size: 1.3em;
+}
+
+.disc_info {
+  max-width: initial;
+  width: 450px;
+}
+.dl_links {
+  width:180px;
+}
+.track_li {
+  width: 190px;
+}
+
+.spacing {
+  font-size: 3em;
+}
+
+/** contents **/
+.content {
+  width: 30.1%;
+  margin: 1.6%;
+}
+
+.next {
+  font-size: 1.4em;
+}
+.next_conts img {
+  width: 30%;
+}
+.nextconts_title {
+  font-size: 1.7em;
+}
+.nextconts_date {
+  font-size: 2em;
+}
+
+/** live **/
+.live {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+}
+.live_img {
+  display: block;
+  width: 50%;
+}
+.live_desc {
+  width: 50%;
+}
+
+/** artists **/
+.artist {
+  width: 25%;
+}
