@@ -82,8 +82,11 @@ main {
 }
 
 .split_desc {
-  margin-bottom: 4em;
+  margin: 1em 0 4em;
   text-align: left;
+}
+.split_desc p {
+  margin-bottom: 0.5em;
 }
 
 .track_li {
@@ -230,7 +233,7 @@ main {
 .artist {
   float: left;
   width: 50%;
-  height: 190px;
+  height: 260px;
 }
 .art_logo {
   position: relative;
@@ -272,4 +275,42 @@ footer {
   clear: both;
   background: rgba(0, 0, 0, 0.1);
   padding: 0.5em 0;
+}
+
+
+/**text content**/
+.cont_article {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.back, .cont_article p{
+  text-align: left;
+}
+.head {
+  margin: 1.5em 0 ;
+}
+.head img {
+  width: 50%;
+  max-width: 200px;
+  height: auto;
+}
+.head h1 {
+  font-size: 1.6em;
+}
+.cont_article p {
+  margin-bottom: 0.7em;
+}
+figure {
+  margin: 1.5em 0;
+}
+figure img {
+  width: 70%;
+  max-width: 350px;
+  height: auto;
+}
+.back {
+  margin: 0.5em;
+}
+.back a {
+  font-size: 1.2em;
 }
