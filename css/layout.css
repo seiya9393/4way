@@ -280,6 +280,7 @@ footer {
 
 /**text content**/
 .cont_article {
+  width: 92%;
   max-width: 50rem;
   margin: 0 auto;
 }
