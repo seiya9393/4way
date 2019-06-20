@@ -7,7 +7,7 @@ section {
   height: 5vh;
 }
 .top_image {
-  height: 70vh;
+  height: 71vh;
   margin: 0;
 }
 .top_image img {
@@ -15,12 +15,12 @@ section {
   width: auto;
 }
 .top_text {
-  height: 25vh;
-  margin: auto 0;
+  height: 24vh;
+  margin: 0;
 }
 .top_text h1 {
-  margin: auto;
-  font-size: 20vh;
+  margin: 5vh 0 !important;
+  font-size: 16vh;
 }
 
 .split_desc {

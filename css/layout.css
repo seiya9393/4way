@@ -1,4 +1,5 @@
 @import url(./sanitize.css);
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP|Scheherazade|Cinzel&display=swap');
 
 body{
   display: none;
@@ -18,6 +19,9 @@ body a {
 
 main {
   margin: 0 0.7em;
+}
+.enfont {
+  font-family: 'Scheherazade';
 }
 
 /** top **/
@@ -43,12 +47,13 @@ main {
   display: none;
 }
 .top_text {
-  margin: 1.4em 0 1.9em;
+  margin: 2em 0 1.1em;
 }
 .top_text h1{
+  font-family: 'Cinzel';
   line-height: 0.9em;
   font-weight: 100;
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .disc_info {
@@ -80,6 +85,16 @@ main {
   width: 100%;
   height: 100%;
 }
+li.cd {
+  height: initial;
+  height: auto;
+}
+.cd p {
+  margin: 0.3em 0;
+}
+.small {
+  font-size: 0.8em;
+}
 
 .split_desc {
   margin: 1em 0 4em;
@@ -110,8 +125,8 @@ main {
 }
 
 .spacing  {
-  margin-bottom: 0.6em;
-  font-size: 2em;
+  margin-bottom: 0.1em;
+  font-size: 3em;
   font-weight: normal;
 }
 #contents {
