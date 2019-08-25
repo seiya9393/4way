@@ -83,6 +83,9 @@ main {
 .disc_info a:hover {
   background-color: white;
 }
+p.cmsn {
+  font-size: 0.9em;
+}
 .track_li {
   width: 190px;
   padding: 0.3em 0 0 3em;
@@ -159,9 +162,12 @@ main {
 .disc_info {
   width: 148px;
   float: left;
-  text-align: left;
+}
+.disc_wrap {
   padding: 0 5px;
   border: 1px solid gray;
+  text-align: left;
+
 }
 .disc_info h3 {
   font-size: 1.4em;
@@ -335,17 +341,22 @@ li.cd {
 .live img {
   width: 96%;
   height: auto;
-  margin: 0 2%;
+  margin: 0 2% 1em;
 }
 .live p, .live h3{
   text-align: left;
 }
 .live h3 {
-  font-size: 1.9em;
+  display: block;
+  font-size: 1.5em;
   font-weight: 100;
+  border-bottom: 1px solid gray;
 }
 .live p {
   font-size: 16px;
+}
+p.border {
+  border-bottom: 1px solid gray;
 }
 
 /** Artists **/
