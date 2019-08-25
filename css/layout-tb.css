@@ -18,23 +18,31 @@
 .split_desc {
   font-size: 1.3em;
 }
-
-.disc_info {
-  max-width: initial;
-  width: 450px;
-}
-.dl_links {
-  width:180px;
-}
-.track_li {
-  width: 190px;
-}
-
 .spacing {
   font-size: 4.5em;
   margin-bottom: 0em;
 }
 
+.info_wrap {
+  width: 500px;
+}
+.dl_links {
+  margin: 0 15px 0 75px;
+  width: 160px;
+}
+.dl_links li {
+  margin-bottom: 30px;
+  height: 3em;
+  padding-top: 0.4em;
+}
+.disc_info {
+  width: 190px;
+  padding: 0 25px;
+  margin: 0 15px;
+}
+.disc_info p {
+  display: inline;
+}
 /** contents **/
 .content {
   width: 30.1%;

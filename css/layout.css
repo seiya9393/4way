@@ -2,16 +2,22 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP|Scheherazade|Cinzel&display=swap');
 
 body{
-  display: none;
   text-align: center;
   font-family: 'Noto Serif JP', serif;
 }
 
 section {
-  width: 97%;
+  width: 100%;
   margin: 0 auto;
 }
 
+a {
+  transition: background-color .5s , color .5s;
+}
+a:hover  {
+  background-color: rgba(30, 78, 62, 0.219);
+  color: black;
+}
 body a {
   color: gray;
   text-decoration: underline; 
@@ -22,6 +28,19 @@ main {
 }
 .enfont {
   font-family: 'Scheherazade';
+}
+
+/** loading **/
+#loading-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: table;
+  z-index: 10;
 }
 
 /** top **/
@@ -56,54 +75,35 @@ main {
   font-size: 4em;
 }
 
+
+.info {
+  overflow: hidden;
+  margin: 0 auto;
+}
+.track_li {
+  width: 190px;
+  padding: 0.3em 0 0 3em;
+  margin: 0 auto 2.5em;
+}
+.track_li ol {
+  text-align: left;
+  list-style: decimal;
+}
+.track_li li {
+  font-size: 1.5em;
+  line-height: 0.8em;
+  margin-bottom: 15px;
+}
+.track_li span {
+  font-size: 0.6em;
+}
+
+/*
 .disc_info {
   overflow: hidden;
   max-width: 330px;
   margin: 0 auto;
 }
-.dl_links {
-  display: flex;
-  flex-direction: column;
-  float: left;
-  margin: 0 auto 3em;
-  width: 41%;
-  max-width: 250px;
-}
-.dl_links li {
-  display: inline-block;
-  position: relative;
-  margin: 0 0 1em 2px;
-  font-size: 1.2em;
-  width: 100%;
-  min-width: 117px;
-  height: 3em;
-  border: 1px solid black;
-}
-.dl_links a {
-  display: block;
-  padding-top: 0.6em;
-  width: 100%;
-  height: 100%;
-}
-li.cd {
-  height: initial;
-  height: auto;
-}
-.cd p {
-  margin: 0.3em 0;
-}
-.small {
-  font-size: 0.8em;
-}
-
-.split_desc {
-  margin: 1em 0 4em;
-  text-align: left;
-}
-.split_desc p {
-  margin-bottom: 0.5em;
-}
-
 .track_li {
   float: right;
   display: block;
@@ -123,6 +123,113 @@ li.cd {
 .track_li span {
   font-size: 0.6em;
 }
+.dl_links {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin: 0 auto 3em;
+  width: 48%;
+  max-width: 250px;
+}
+.dl_links li {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 1em 0;
+  font-size: 1.2em;
+  width: 100%;
+  min-width: 117px;
+  height: 3em;
+  border: 1px solid black;
+}
+.dl_links a {
+  display: block;
+  padding-top: 0.6em;
+  width: 100%;
+  height: 100%;
+}
+*/
+.info_wrap {
+  margin: 0 auto;
+  width: 295px;
+  overflow: hidden;
+}
+.disc_info {
+  width: 148px;
+  float: left;
+  text-align: left;
+  padding: 0 5px;
+  border: 1px solid gray;
+}
+.disc_info h3 {
+  font-size: 1.4em;
+  margin-bottom: 0.3em;
+  font-weight: normal;
+  text-align: center;
+}
+.disc_info ul {
+  margin-top: 0.5em;
+  list-style: none;
+}
+.disc_info li {
+  margin-bottom: 0.4em;
+}
+.dl_links {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin: 0 10px 3em 0;
+  width: 135px;
+  max-width: 250px;
+}
+.dl_links li {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 0.5em 0;
+  font-size: 1.3em;
+  width: 100%;
+  min-width: 117px;
+  height: 2em;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.dl_links a {
+  display: block;
+  padding-top: 0.2em;
+  width: 100%;
+  height: 100%;
+}
+/**
+.dl_links {
+  width: 142px;
+  float: left;
+  padding: 0 10px;
+}
+.dl_links a {
+  display: block;
+  font-size:1.3em; 
+  margin-bottom: 0.6em;
+  width: 100%;
+  border: 1px solid black;
+}**/
+li.cd {
+  height: initial;
+  height: auto;
+}
+.cd p {
+  margin: 0.3em 0;
+}
+.small {
+  font-size: 0.8em;
+}
+
+.split_desc {
+  margin: 1em 0 4em;
+  text-align: left;
+}
+.split_desc p {
+  margin-bottom: 0.5em;
+}
+
 
 .spacing  {
   margin-bottom: 0.1em;
@@ -223,8 +330,9 @@ li.cd {
   text-align: center;
 }
 .live img {
-  width: 100%;
+  width: 96%;
   height: auto;
+  margin: 0 2%;
 }
 .live p, .live h3{
   text-align: left;
@@ -272,13 +380,6 @@ li.cd {
 .art_link {
   margin-bottom: 0.2em;
   font-size: 1.1em;
-}
-a {
-  transition: background-color .5s , color .5s;
-}
-a:hover  {
-  background-color: rgba(30, 78, 62, 0.219);
-  color: black;
 }
 .art_link a {
   background-color: white;
