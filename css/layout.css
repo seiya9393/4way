@@ -80,6 +80,9 @@ main {
   overflow: hidden;
   margin: 0 auto;
 }
+.disc_info a:hover {
+  background-color: white;
+}
 .track_li {
   width: 190px;
   padding: 0.3em 0 0 3em;
