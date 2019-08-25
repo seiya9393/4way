@@ -39,8 +39,11 @@
 }
 .disc_info {
   width: 190px;
-  padding: 0 25px;
   margin: 0 15px;
+}
+.disc_wrap {
+  padding: 0 25px;
+
 }
 .disc_info p {
   display: inline;
