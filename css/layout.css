@@ -5,7 +5,9 @@ body{
   text-align: center;
   font-family: 'Noto Serif JP', serif;
 }
-
+* {
+  color: rgba(0, 0, 0, 0.87);
+}
 section {
   width: 100%;
   margin: 0 auto;
@@ -15,16 +17,16 @@ a {
   transition: background-color .5s , color .5s;
 }
 a:hover  {
-  background-color: rgba(30, 78, 62, 0.219);
-  color: black;
+  background-color: rgba(30, 78, 62, 0.12);
+  color: rgba(0, 0, 0, 0.87);
 }
 body a {
-  color: gray;
+  color: rgba(0, 0, 0, 0.54);
   text-decoration: underline; 
 }
 
 main {
-  margin: 0 0.7em;
+  margin: 0 0.8em;
 }
 .enfont {
   font-family: 'Scheherazade';
@@ -55,7 +57,7 @@ main {
   height: auto;
 }
 .artist_logos{
-  margin:0 3% 5px 4%;
+  margin: 2em 3% 3em 4%;
   width: 93%;
 }
 .artist_logos img{
@@ -66,13 +68,22 @@ main {
   display: none;
 }
 .top_text {
-  margin: 2em 0 1.1em;
+  margin: 3em 0 1.1em;
 }
 .top_text h1{
   font-family: 'Cinzel';
   line-height: 0.9em;
   font-weight: 100;
   font-size: 4em;
+}
+.split_desc p{
+  text-align: justify;
+  line-height: 1.8;
+  margin-bottom: 1em;
+  color: rgba(0, 0, 0, 0.87)
+}
+.split_desc {
+  margin: 1em 0 4em;
 }
 
 
@@ -85,11 +96,12 @@ main {
 }
 p.cmsn {
   font-size: 0.9em;
+  margin-bottom: 5px;
 }
 .track_li {
   width: 190px;
   padding: 0.3em 0 0 3em;
-  margin: 0 auto 2.5em;
+  margin: 10em auto 5em;
 }
 .track_li ol {
   text-align: left;
@@ -165,7 +177,7 @@ p.cmsn {
 }
 .disc_wrap {
   padding: 0 5px;
-  border: 1px solid gray;
+  border: 1px solid rgba(0, 0, 0, 0.12);
   text-align: left;
 
 }
@@ -198,7 +210,7 @@ p.cmsn {
   width: 100%;
   min-width: 117px;
   height: 2em;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 .dl_links a {
@@ -231,13 +243,6 @@ li.cd {
   font-size: 0.8em;
 }
 
-.split_desc {
-  margin: 1em 0 4em;
-  text-align: left;
-}
-.split_desc p {
-  margin-bottom: 0.5em;
-}
 
 
 .spacing  {
@@ -246,7 +251,7 @@ li.cd {
   font-weight: normal;
 }
 #contents {
-  margin-top: 8em;
+  margin-top: 14em;
 }
 #live {
   margin-top: 15em;
@@ -267,7 +272,7 @@ li.cd {
   position: relative;
   width: 45%;
   margin: 2.5%;
-  box-shadow: 0 0 5px rgb(110, 110, 110);
+  border: 1px solid rgba(0, 0, 0, 0.12);
 }
 .content:before{
   display: block;
@@ -318,7 +323,7 @@ li.cd {
 }
 
 .next_conts{
-  margin-top: 1.5em;
+  margin-top: 6em;
 }
 .next {
   text-align: left;
@@ -339,24 +344,23 @@ li.cd {
   text-align: center;
 }
 .live img {
-  width: 96%;
+  width: 100%;
   height: auto;
-  margin: 0 2% 1em;
-}
-.live p, .live h3{
-  text-align: left;
 }
 .live h3 {
+  text-align: justify;
   display: block;
   font-size: 1.5em;
   font-weight: 100;
-  border-bottom: 1px solid gray;
+  padding: 5px 0;
+}
+.live_wrap {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 6px 0 0;
 }
 .live p {
+  text-align: left;
   font-size: 16px;
-}
-p.border {
-  border-bottom: 1px solid gray;
 }
 
 /** Artists **/
@@ -403,8 +407,11 @@ p.border {
 /** footer **/
 footer {
   clear: both;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.10);
   padding: 0.5em 0;
+}
+.contact {
+  margin: 1em 0 1.2em;
 }
 
 

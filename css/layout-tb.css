@@ -12,7 +12,7 @@
 }
 .artist_logos {
   width: 100%;
-  margin: 0 0 10px;
+  margin: 0 0 6em;
 }
 
 .split_desc {
@@ -31,7 +31,6 @@
   width: 160px;
 }
 .dl_links li {
-  margin-bottom: 30px;
   height: 3em;
 }
 .dl_links a{
@@ -78,9 +77,14 @@
 .live_img {
   display: block;
   width: 50%;
+  margin-top: 7px;
+}
+.live h3 {
+  padding-top: 0;
 }
 .live_desc {
-  width: 50%;
+  width: 48%;
+  margin-left: 2%;
 }
 
 /** artists **/

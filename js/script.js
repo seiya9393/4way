@@ -5,10 +5,11 @@ $(function(){
   $(".tcks a").append("<img class='cont_art' src='./img/tcks_logo.png' alt='冬蟲夏草' >");
 });
 
+$(window).on('load',function(){
+  $("#loading-wrap").fadeOut('slow');
+});
+
 $(function(){
-  $(window).on('load',function(){
-    $("#loading-wrap").fadeOut('slow');
-  });
   function loaderClose(){
     $("#loading-wrap").fadeOut('slow');
   }
